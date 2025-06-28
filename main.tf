@@ -5,9 +5,9 @@ module "azure_resource_group" {
 }
 
 module "azurerm_virtual_network" {
-  depends_on          = [module.azure_resource_group]
-  source              = "./module/azure_vnet"
-  vnet_name = var.vnet_name
-  vnet_location            = var.vnet_location
-  rg_name =  = var.rg_name
+  depends_on     = [module.azure_resource_group]
+  source         = "./module/azure_vnet"
+  vnet_name      = var.vnet_name
+  vnet_location  = var.vnet_location
+  resource_group = var.rg_name
 }

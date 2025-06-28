@@ -8,6 +8,6 @@ variable "vnet_location" {
 
 }
 #resource group name
-variable "rg_name" {
+variable "resource_group" {
 
 }
